@@ -54,6 +54,10 @@ Table of contents
   color: grey;
   font-size: 18px;
 }
+.card span{
+  text-decoration:underline;
+  color: #390099;
+}
 
 .card button {
   border: none;
