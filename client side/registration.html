@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="typni website">
+
+    <!-- ========== Page Title ========== -->
+    <title> join - Typni</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-charity-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    <div id="header-placeholder"></div>
+    <script>
+    fetch('/components/header.html') // make sure this path is correct
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+    <!-- End Header-->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <!-- <div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image: url(assets/img/2440x1578.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 text-left">
+                    <h1>Event</h1>
+                </div>
+                <div class="col-md-6 col-sm-6 text-right">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li class="active">Event</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Breadcrumb -->
+
+    <!-- Start Membership registration 
+    ============================================= -->
+    <div class="donation-form default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 form">
+                    <h2>Membership Registration</h2>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Your Details</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="name">Your Name</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="name" placeholder="Name as per ID" required>
+                                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Phone">Phone Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="phone_number" placeholder="+254 " required>
+                                                <span class="input-group-addon"><i class="fas fa-phone"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="id-number">ID Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="idNumber" placeholder="Your Id Number" required>
+                                                <span class="input-group-addon"><i class="fas fa-flag"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="email">Email </label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="email" placeholder="yourname@mail.com" required>
+                                                <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Phone">Date Of Birth</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="Birth Day" placeholder="DD/MM/YYYY " required>
+                                                <span class="input-group-addon"><i class="fas fa-birthday-cake"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="donateType">Gender</label>
+                                            <select id="donateType" class="form-control">
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="not Say">Rather Not Say</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="donateType">Country</label>
+                                            <select id="donateType" class="form-control">
+                                                <option value="kenya">Kenya</option>
+                                                <option value="uganda">Uganda</option>
+                                                <option value="tanzania">Tanzania</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="donateType">Are You Employed?</label>
+                                            <select id="donateType" class="form-control">
+                                                <option value="kenya">No</option>
+                                                <option value="uganda">Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="email">Higest Level Of Education </label>
+                                            <select id="donateType" class="form-control">
+                                                <option value="highschool">High School</option>
+                                                <option value="tvet">TVET</option>
+                                                <option value="college">College</option>
+                                                <option value="university">University</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="interests">Let's Pick Your Interests *</label>
+                                        <select id="interests" class="form-control" multiple> <!-- "multiple" allows for multiple selections -->
+                                            <option value="youth-empowerment">Youth Empowerment</option>
+                                            <option value="youth-mentorship">Youth Mentorship</option>
+                                            <option value="youth-employment">Youth Employment</option>
+                                            <option value="entrepreneurship">Entrepreneurship</option>
+                                            <option value="financial-literacy">Financial Literacy</option>
+                                            <option value="youth-representation">Youth Representation</option>
+                                            <option value="education">Education</option>
+                                            <option value="sports-arts-talent">Sports, Arts & Talent</option>
+                                            <option value="pan-africanism">Pan Africanism</option>
+                                            <option value="technology-digital-literacy">Technology & Digital Literacy</option>
+                                            <option value="menstrual-health">Menstrual Health</option>
+                                            <option value="sexual-education">Sexual Education</option>
+                                            <option value="female-genital-mutilation">Female Genital Mutilation</option>
+                                            <option value="childhood-marriages">Childhood Marriages</option>
+                                            <option value="childhood-pregnancies">Childhood Pregnancies</option>
+                                            <option value="alcohol-drugs-substance-abuse">Alcohol, Drugs & Substance Abuse</option>
+                                            <option value="mental-health-action">Mental Health Action</option>
+                                            <option value="inclusivity-young-pwds">Inclusivity of Young PWDs</option>
+                                            <option value="cyberbullying">Cyberbullying</option>
+                                            <option value="blood-donation">Blood Donation</option>
+                                            <option value="climate-change-mitigation">Climate Change Mitigation</option>
+                                            <option value="climate-change-adaptation-resilience">Climate Change Adaptation & Resilience</option>
+                                            <option value="nature-based-solutions">Nature-Based Solutions</option>
+                                            <option value="water-solutions-management">Water Solutions & Management</option>
+                                            <option value="smart-agriculture">Smart Agriculture</option>
+                                        </select>
+                                        <small class="form-text text-muted">Hold down the Ctrl (Windows) or Command (Mac) button to select multiple options.</small>
+                                    </div>
+                                </div>   
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-theme effect btn-sm" type="submit">Register Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer 
+    ============================================= -->
+    <div id="footer-placeholder"></div>
+    <script>
+    fetch('/components/footer.html') // make sure this path is correct
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
