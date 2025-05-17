@@ -2739,6 +2739,7 @@ nav.bootsnav.navbar-default.info-topbar.sticked ul li a {
 =================================================================== */
 .donation-form .form {
   padding-right: 35px;
+  
 }
 
 .donation-form h2 {
@@ -2835,6 +2836,123 @@ nav.bootsnav.navbar-default.info-topbar.sticked ul li a {
 }
 
 .donation-form .testimonial-items .item img {
+  margin: auto auto 20px;
+}
+
+/* ============================================================== 
+     # Registration Form / login form
+=================================================================== */
+.login .col-md-12{
+  justify-content: center !important;
+  align-items: center !important;
+  align-self: center !important;
+  align-content: center;
+  display: center;
+}
+.registration-form{
+  display: center;
+  margin-top: -80px !important;
+
+}
+.registration-form .form {
+  padding-right: 35px;
+  
+}
+
+.registration-form h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  margin-top: -5px;
+}
+
+.registration-form h2::after {
+  background: #FF0054 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+.registration-form .panel.panel-default {
+  border: medium none;
+  border-radius: inherit;
+  -moz-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+  -o-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}
+
+.registration-form .panel.panel-default .panel-heading {
+  background: #390099 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: inherit;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.registration-form .panel.panel-default .panel-body {
+  box-shadow: inherit;
+}
+
+.registration-form .panel.panel-default .panel-heading h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.registration-form .panel.panel-default:last-child {
+  margin: 0;
+}
+
+.registration-form .panel.panel-default button {
+  margin-top: 15px;
+}
+
+.registration-form input {
+  border: 1px solid #e7e7e7;
+  box-shadow: inherit;
+}
+
+.registration-form select {
+  border: 1px solid #e7e7e7;
+  box-shadow: inherit;
+  min-height: 50px;
+}
+
+.registration-form select option {
+  padding: 5px 15px;
+}
+
+.registration-form .owl-dots {
+  margin-top: 15px !important;
+  text-align: center;
+}
+
+.registration-form .owl-dots .owl-dot span {
+  background: #ffffff none repeat scroll 0 0;
+  border: 3px solid #232323;
+  height: 15px;
+  margin: 0 5px;
+  padding: 0;
+  width: 15px;
+}
+
+.registration-form .owl-dots .owl-dot.active span {
+  border-color: #FF0054;
+  background-color: #ffffff;
+}
+
+.registration-form .testimonial-items {
+  padding: 35px 30px;
+}
+
+.registration-form .testimonial-items .item img {
   margin: auto auto 20px;
 }
 
